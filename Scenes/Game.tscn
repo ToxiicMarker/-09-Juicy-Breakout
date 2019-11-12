@@ -1,0 +1,209 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Cherry.jpeg" type="Texture" id=2]
+[ext_resource path="res://Scripts/Paddle.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Oswald/Oswald-Heavy.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Scripts/Score.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Lives.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/Starting.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/Node2DAudio.gd" type="Script" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 72, 16 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+outline_color = Color( 0.00392157, 0, 0, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 18
+outline_color = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+font_data = ExtResource( 5 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -40.0
+margin_top = -40.0
+margin_right = 1070.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Paddle" type="KinematicBody2D" parent="."]
+position = Vector2( 540, 550 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Paddle"]
+margin_left = -72.0
+margin_top = -16.0
+margin_right = 72.0
+margin_bottom = 16.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle"]
+shape = SubResource( 1 )
+
+[node name="Wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( 0, 632, 0, 0, 1010, 0, 1010, 620, 1060, 620, 1064, -40, 215.591, -40, -48, -40, -48, 632 )
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="Tile Row 1" type="Node2D" parent="Tiles"]
+position = Vector2( 0, -80 )
+
+[node name="Tile2" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 570, 295 )
+
+[node name="Tile3" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 510, 295 )
+
+[node name="Tile4" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 447.5, 325 )
+
+[node name="Tile5" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 632.5, 325 )
+
+[node name="Tile6" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 540, 355 )
+
+[node name="Tile7" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 550, 235 )
+
+[node name="Tile8" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 468, 205 )
+
+[node name="Tile9" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 612, 205 )
+
+[node name="Tile10" parent="Tiles/Tile Row 1" instance=ExtResource( 4 )]
+position = Vector2( 530, 235 )
+
+[node name="Tile Row 2" type="Node2D" parent="Tiles"]
+editor/display_folded = true
+position = Vector2( 0, -80 )
+
+[node name="Tile8" parent="Tiles/Tile Row 2" instance=ExtResource( 4 )]
+position = Vector2( 478.25, 355 )
+
+[node name="Tile10" parent="Tiles/Tile Row 2" instance=ExtResource( 4 )]
+position = Vector2( 601.25, 355 )
+
+[node name="Tile Row 4" type="Node2D" parent="Tiles"]
+editor/display_folded = true
+position = Vector2( 0, -80 )
+
+[node name="Tile" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 510, 455 )
+
+[node name="Tile2" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 632.5, 445.149 )
+
+[node name="Tile3" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 570, 455 )
+
+[node name="Tile4" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 447.5, 445.149 )
+
+[node name="Tile5" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 385, 415 )
+
+[node name="Tile6" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 352.75, 385 )
+
+[node name="Tile7" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 322.5, 355 )
+
+[node name="Tile8" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 695, 415 )
+
+[node name="Tile9" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 726.25, 385 )
+
+[node name="Tile10" parent="Tiles/Tile Row 4" instance=ExtResource( 4 )]
+position = Vector2( 757.5, 355 )
+
+[node name="Tile Row 5" type="Node2D" parent="Tiles"]
+editor/display_folded = true
+position = Vector2( 0, -80 )
+
+[node name="Tile" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 291.25, 325 )
+
+[node name="Tile2" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 322.5, 295 )
+
+[node name="Tile3" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 353.75, 265 )
+
+[node name="Tile4" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 384.75, 235 )
+
+[node name="Tile5" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 695, 235 )
+
+[node name="Tile6" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 446.25, 205 )
+
+[node name="Tile7" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 633.75, 205 )
+
+[node name="Tile8" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 726.25, 265 )
+
+[node name="Tile9" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 757.5, 295 )
+
+[node name="Tile10" parent="Tiles/Tile Row 5" instance=ExtResource( 4 )]
+position = Vector2( 788.75, 325 )
+
+[node name="Score" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 16.0
+margin_right = 112.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.980392, 0.0235294, 0.0235294, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "Score: "
+script = ExtResource( 6 )
+
+[node name="Lives" type="Label" parent="."]
+margin_left = 952.0
+margin_top = 16.0
+margin_right = 1006.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "Lives:"
+script = ExtResource( 7 )
+
+[node name="Starting" type="Label" parent="."]
+margin_left = 30.0
+margin_right = 1054.0
+margin_bottom = 112.0
+align = 1
+valign = 1
+script = ExtResource( 8 )
+
+[node name="Timer" type="Timer" parent="Starting"]
+wait_time = 10.0
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource( 9 )
+[connection signal="timeout" from="Starting/Timer" to="Starting" method="_on_Timer_timeout"]

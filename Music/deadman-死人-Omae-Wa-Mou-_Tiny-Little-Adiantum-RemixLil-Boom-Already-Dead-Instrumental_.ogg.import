@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/deadman-死人-Omae-Wa-Mou-_Tiny-Little-Adiantum-RemixLil-Boom-Already-Dead-Instrumental_.ogg-bb27812712e565f5ec77852ca6ef3b9c.oggstr"
+
+[deps]
+
+source_file="res://Music/deadman-死人-Omae-Wa-Mou-_Tiny-Little-Adiantum-RemixLil-Boom-Already-Dead-Instrumental_.ogg"
+dest_files=[ "res://.import/deadman-死人-Omae-Wa-Mou-_Tiny-Little-Adiantum-RemixLil-Boom-Already-Dead-Instrumental_.ogg-bb27812712e565f5ec77852ca6ef3b9c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

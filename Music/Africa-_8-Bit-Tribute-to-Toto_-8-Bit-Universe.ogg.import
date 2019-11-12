@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Africa-_8-Bit-Tribute-to-Toto_-8-Bit-Universe.ogg-8a8aa7141bfaa9ee29f262f5206cbcf0.oggstr"
+
+[deps]
+
+source_file="res://Music/Africa-_8-Bit-Tribute-to-Toto_-8-Bit-Universe.ogg"
+dest_files=[ "res://.import/Africa-_8-Bit-Tribute-to-Toto_-8-Bit-Universe.ogg-8a8aa7141bfaa9ee29f262f5206cbcf0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
