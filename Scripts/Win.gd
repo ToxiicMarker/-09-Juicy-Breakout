@@ -8,4 +8,4 @@ func _on_Button_pressed():
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://Scenes/Game2.tscn")
+	get_tree().change_scene("res://Scenes/Level2.tscn")

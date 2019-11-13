@@ -9,9 +9,11 @@ extents = Vector2( 32, 16 )
 "Tiles",
 ]]
 editor/display_folded = true
-visible = false
 position = Vector2( 104, 296 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -32.0

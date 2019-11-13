@@ -1,0 +1,141 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=1]
+
+[node name="Tiles" type="Node2D"]
+
+[node name="Tile Row 1" type="Node2D" parent="."]
+position = Vector2( -40, -70 )
+
+[node name="Tile2" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 570, 295 )
+
+[node name="Tile3" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 510, 295 )
+
+[node name="Tile4" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 447.5, 325 )
+
+[node name="Tile5" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 632.5, 325 )
+
+[node name="Tile6" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 540, 355 )
+
+[node name="Tile7" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 550, 235 )
+
+[node name="Tile8" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 468, 205 )
+
+[node name="Tile9" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 612, 205 )
+
+[node name="Tile10" parent="Tile Row 1" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 530, 235 )
+
+[node name="Tile Row 2" type="Node2D" parent="."]
+position = Vector2( -40, -70 )
+
+[node name="Tile8" parent="Tile Row 2" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 478.25, 355 )
+
+[node name="Tile10" parent="Tile Row 2" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 601.25, 355 )
+
+[node name="Tile Row 4" type="Node2D" parent="."]
+position = Vector2( -40, -70 )
+
+[node name="Tile" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 510, 455 )
+
+[node name="Tile2" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 632.5, 445.149 )
+
+[node name="Tile3" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 570, 455 )
+
+[node name="Tile4" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 447.5, 445.149 )
+
+[node name="Tile5" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 385, 415 )
+
+[node name="Tile6" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 352.75, 385 )
+
+[node name="Tile7" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 322.5, 355 )
+
+[node name="Tile8" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 695, 415 )
+
+[node name="Tile9" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 726.25, 385 )
+
+[node name="Tile10" parent="Tile Row 4" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 757.5, 355 )
+
+[node name="Tile Row 5" type="Node2D" parent="."]
+position = Vector2( -40, -70 )
+
+[node name="Tile" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 291.25, 325 )
+
+[node name="Tile2" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 322.5, 295 )
+
+[node name="Tile3" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 353.75, 265 )
+
+[node name="Tile4" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 384.75, 235 )
+
+[node name="Tile5" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 695, 235 )
+
+[node name="Tile6" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 446.25, 205 )
+
+[node name="Tile7" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 633.75, 205 )
+
+[node name="Tile8" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 726.25, 265 )
+
+[node name="Tile9" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 757.5, 295 )
+
+[node name="Tile10" parent="Tile Row 5" instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 788.75, 325 )
